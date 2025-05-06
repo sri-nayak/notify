@@ -23,7 +23,7 @@ dependencyResolutionManagement {
     repositories {
         // ... other repositories
         maven {
-            url "https://raw.githubusercontent.com/YOUR_USERNAME/notify/main/repo"
+            url "https://raw.githubusercontent.com/sri-nayak/notify/main/repo"
         }
     }
 }
@@ -195,10 +195,10 @@ This library is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Support
 
 If you encounter any issues or have questions, please:
-1. Check the [documentation](https://github.com/YOUR_USERNAME/notify/wiki)
-2. Search for [existing issues](https://github.com/YOUR_USERNAME/notify/issues)
+1. Check the [documentation](https://github.com/sri-nayak/notify/wiki)
+2. Search for [existing issues](https://github.com/sri-nayak/notify/issues)
 3. Create a new issue if needed
 
 ## Credits
 
-Developed by [Your Name](https://github.com/YOUR_USERNAME)
+Developed by [Sri Nayak](https://github.com/sri-nayak)
