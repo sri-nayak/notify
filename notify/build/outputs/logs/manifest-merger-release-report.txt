@@ -1,0 +1,44 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\LENOVO\Desktop\Notify\notify\src\main\AndroidManifest.xml:2:1-19:12
+INJECTED from C:\Users\LENOVO\Desktop\Notify\notify\src\main\AndroidManifest.xml:2:1-19:12
+	package
+		INJECTED from C:\Users\LENOVO\Desktop\Notify\notify\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\LENOVO\Desktop\Notify\notify\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\LENOVO\Desktop\Notify\notify\src\main\AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from C:\Users\LENOVO\Desktop\Notify\notify\src\main\AndroidManifest.xml:4:22-64
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from C:\Users\LENOVO\Desktop\Notify\notify\src\main\AndroidManifest.xml:5:5-77
+	android:name
+		ADDED from C:\Users\LENOVO\Desktop\Notify\notify\src\main\AndroidManifest.xml:5:22-74
+uses-permission#android.permission.WAKE_LOCK
+ADDED from C:\Users\LENOVO\Desktop\Notify\notify\src\main\AndroidManifest.xml:6:5-68
+	android:name
+		ADDED from C:\Users\LENOVO\Desktop\Notify\notify\src\main\AndroidManifest.xml:6:22-65
+application
+ADDED from C:\Users\LENOVO\Desktop\Notify\notify\src\main\AndroidManifest.xml:8:5-17:19
+service#com.livestreamiq.notify.NotifyFirebaseMessagingService
+ADDED from C:\Users\LENOVO\Desktop\Notify\notify\src\main\AndroidManifest.xml:9:9-16:19
+	android:exported
+		ADDED from C:\Users\LENOVO\Desktop\Notify\notify\src\main\AndroidManifest.xml:11:13-37
+	android:directBootAware
+		ADDED from C:\Users\LENOVO\Desktop\Notify\notify\src\main\AndroidManifest.xml:12:13-43
+	android:name
+		ADDED from C:\Users\LENOVO\Desktop\Notify\notify\src\main\AndroidManifest.xml:10:13-59
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from C:\Users\LENOVO\Desktop\Notify\notify\src\main\AndroidManifest.xml:13:13-15:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from C:\Users\LENOVO\Desktop\Notify\notify\src\main\AndroidManifest.xml:14:17-78
+	android:name
+		ADDED from C:\Users\LENOVO\Desktop\Notify\notify\src\main\AndroidManifest.xml:14:25-75
+uses-sdk
+INJECTED from C:\Users\LENOVO\Desktop\Notify\notify\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\LENOVO\Desktop\Notify\notify\src\main\AndroidManifest.xml
+INJECTED from C:\Users\LENOVO\Desktop\Notify\notify\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\LENOVO\Desktop\Notify\notify\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\LENOVO\Desktop\Notify\notify\src\main\AndroidManifest.xml

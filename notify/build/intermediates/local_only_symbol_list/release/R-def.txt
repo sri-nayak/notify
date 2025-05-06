@@ -1,0 +1,16 @@
+R_DEF: Internal format may change without notice
+local
+drawable ic_default_avatar
+drawable ic_notification
+id avatar
+id background
+id button
+id content
+id icon
+id message
+id timestamp
+id title
+layout notification_alert
+layout notification_custom
+layout notification_message_card
+layout notification_promo_banner
