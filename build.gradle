@@ -1,6 +1,6 @@
 plugins {
-    id 'com.android.library'
-    id 'org.jetbrains.kotlin.android'
+    id 'com.android.library' version '8.1.0' // ✅ specify AGP version
+    id 'org.jetbrains.kotlin.android' version '1.9.22' // ✅ specify Kotlin plugin version
     id 'maven-publish'
 }
 
