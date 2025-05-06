@@ -1,25 +1,21 @@
 plugins {
-    id 'com.android.library' version '8.2.0'
-    id 'org.jetbrains.kotlin.android' version '1.9.0'
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
     id 'maven-publish'
-    id 'com.google.gms.google-services' version '4.4.0'
 }
 
 android {
     namespace 'com.livestreamiq.notify'
     compileSdk 34
 
-    buildFeatures {
-        buildConfig true
-    }
-
     defaultConfig {
         minSdk 24
         targetSdk 34
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0"
+
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        buildConfigField "boolean", "nonTransitiveRClass", "true"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -28,19 +24,18 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_17
-        targetCompatibility JavaVersion.VERSION_17
-    }
-    kotlinOptions {
-        jvmTarget = '17'
-    }
     
-    publishing {
-        singleVariant("release") {
-            withSourcesJar()
-            withJavadocJar()
-        }
+    buildFeatures {
+        buildConfig true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
     }
 }
 
@@ -48,14 +43,8 @@ dependencies {
     implementation 'androidx.core:core-ktx:1.12.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.11.0'
-    
-    // Firebase
     implementation platform('com.google.firebase:firebase-bom:32.7.0')
-    implementation 'com.google.firebase:firebase-messaging'
-    
-    // Gson
-    implementation 'com.google.code.gson:gson:2.10.1'
-    
+    implementation 'com.google.firebase:firebase-messaging-ktx'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
@@ -65,14 +54,12 @@ afterEvaluate {
     publishing {
         publications {
             release(MavenPublication) {
-                from components.getByName("release")
-                
+                from components.release
                 groupId = 'com.livestreamiq'
                 artifactId = 'notify'
                 version = '1.0.0'
             }
         }
-        
         repositories {
             maven {
                 name = 'localRepo'
