@@ -198,6 +198,7 @@ If you encounter any issues or have questions, please:
 1. Check the [documentation](https://github.com/sri-nayak/notify/wiki)
 2. Search for [existing issues](https://github.com/sri-nayak/notify/issues)
 3. Create a new issue if needed
+4. thnks
 
 ## Credits
 
